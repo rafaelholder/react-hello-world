@@ -1,0 +1,17 @@
+.button {
+    width: 100%;
+    cursor: pointer;
+    background: darkblue;
+    color: antiquewhite;
+    border: none;
+    padding: 15px 30px;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background: #888;
+}

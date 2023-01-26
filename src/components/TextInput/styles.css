@@ -1,0 +1,12 @@
+
+
+.text-input {
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    background: rgb(173, 172, 172);
+    padding: 8px;
+    max-width: 100%;
+    min-width: 100%;
+}
