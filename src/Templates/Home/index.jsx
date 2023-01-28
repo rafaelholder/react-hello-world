@@ -15,14 +15,14 @@ import { useCallback, useEffect, useState } from 'react';
     const [searchValue, setSearchValue] = useState('');
   
     const handleLoadPosts = useCallback(async (page, postsPerPage) => {
-      const postsAndPhotos = await loadPosts();
+      const postsAndPhotos =  await loadPosts();
       
       setPosts(postsAndPhotos.slice(page, postsPerPage));
       setAllPosts(postsAndPhotos);
     }, []);
   
     useEffect(() => {
-      console.log(new Date().toLocaleString('pt-BR'));
+      
       handleLoadPosts(0, postsPerPage);
     }, [handleLoadPosts, postsPerPage]);
   
@@ -64,7 +64,7 @@ import { useCallback, useEffect, useState } from 'react';
         )}
   
         {filteredPosts.length === 0 && (
-          <p>Não existem posts =(</p>
+          <p>Não existem posts :(</p>
         )}
   
         <div className="button-container">
